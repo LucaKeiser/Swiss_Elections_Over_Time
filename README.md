@@ -16,7 +16,7 @@ Die App stellt die Parteistärke der Nationalratswahlen zwischen 1971 und 2019 i
 ### Quelle und weitere Hinweise
 
 - Die Daten wurden vom der [*Webseite des Bundesamtes für Statistik*](https://www.bfs.admin.ch/bfs/de/home/statistiken/politik/wahlen.assetdetail.12967001.html) bezogen und sind öffentlich zugänglich.
-- Weitere Informationen finden Sie [hier](https://www.linkedin.com/posts/luca-keiser-806329285_nationalratswahlen-2023-noch-10-tage-activity-7118196162221748225-xUka?utm_source=share&utm_medium=member_desktop)
+- Weitere Informationen finden Sie [hier](https://www.linkedin.com/posts/luca-keiser-806329285_nationalratswahlen-2023-noch-10-tage-activity-7118196162221748225-xUka?utm_source=share&utm_medium=member_desktop).
 
 *©[Luca Keiser](https://www.linkedin.com/in/luca-keiser-806329285/) | Oktober, 2023*
 
