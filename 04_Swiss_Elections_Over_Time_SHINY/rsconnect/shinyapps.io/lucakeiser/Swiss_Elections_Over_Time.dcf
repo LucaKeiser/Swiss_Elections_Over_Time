@@ -1,0 +1,12 @@
+name: Swiss_Elections_Over_Time
+title: Swiss_Elections_Over_Time
+username: lucakeiser
+account: lucakeiser
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10170222
+bundleId: 7794707
+url: https://lucakeiser.shinyapps.io/Swiss_Elections_Over_Time/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
