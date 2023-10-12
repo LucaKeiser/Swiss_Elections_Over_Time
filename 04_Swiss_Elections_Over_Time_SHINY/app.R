@@ -33,7 +33,7 @@ ui <- fluidPage(
   
   hr(),
   
-  p(strong("Haben Sie schon die Web-App zu den einzelnen Kampagnenbudgets der Politiker*innen/Parteien gesehen?"), br(), "https://lucakeiser.shinyapps.io/Swiss_Elections_2023/"),
+  p(strong("Haben Sie schon die Web-App zu den einzelnen Kampagnenbudgets von Politiker*innen/Parteien gesehen?"), br(), "https://lucakeiser.shinyapps.io/Swiss_Elections_2023/"),
   
   hr(),
   
