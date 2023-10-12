@@ -1,4 +1,4 @@
-# Swiss Elections Over Time
+# Nationalratswahlen Schweiz | Parteienstärke von 1971 bis 2019
 
 In diesem Repository befindet der Code, welcher für die Aufbereitung der Daten sowie den Betrieb dieser [Shiny-Webapplikation](https://lucakeiser.shinyapps.io/Swiss_Elections_Over_Time/) benötigt wird.
 
