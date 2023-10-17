@@ -16,17 +16,23 @@ library(scales)
 library(gganimate)
 library(glue)
 
+# parallel processing
+library(doParallel)
+
+n_cores <- detectCores()
+cl <- makeCluster(n_cores - 8L)
+registerDoParallel(cl)
+
+# set theme
 theme_set(theme_minimal())
 
 
 # data
-elections_over_time <- read_rds(here::here("Swiss_Elections_Over_Time",
-                                           "01_Data",
+elections_over_time <- read_rds(here::here("01_Data",
                                            "siwss_elections_over_time.rds")) %>% 
   mutate(parteistaerke_prozent = parteistaerke_prozent / 100)
 
-shape_file <- read_sf(here::here("Swiss_Elections_Over_Time",
-                                 "01_Data",
+shape_file <- read_sf(here::here("01_Data",
                                  "Shapefile_Switzerland",
                                  "swissBOUNDARIES3D_1_4_TLM_HOHEITSGEBIET.shp"))
 
@@ -126,8 +132,7 @@ save_animation(
                       height = 2000,
                       width = 2750,
                       nframes = 150),
-  file = here::here("Swiss_Elections_Over_Time",
-                    "03_Output",
+  file = here::here("03_Output",
                     "map_SVP.gif")
 )
 
@@ -156,8 +161,7 @@ save_animation(
                       height = 2000,
                       width = 2750,
                       nframes = 150),
-  file = here::here("Swiss_Elections_Over_Time",
-                    "03_Output",
+  file = here::here("03_Output",
                     "map_FDP.gif")
 )
 
@@ -222,8 +226,7 @@ save_animation(
                       height = 2000,
                       width = 2750,
                       nframes = 150),
-  file = here::here("Swiss_Elections_Over_Time",
-                    "03_Output",
+  file = here::here("03_Output",
                     "map_GLP.gif")
 )
 
@@ -252,8 +255,7 @@ save_animation(
                       height = 2000,
                       width = 2750,
                       nframes = 150),
-  file = here::here("Swiss_Elections_Over_Time",
-                    "03_Output",
+  file = here::here("03_Output",
                     "map_GPS.gif")
 )
 
@@ -282,8 +284,7 @@ save_animation(
                       height = 2000,
                       width = 2750,
                       nframes = 150),
-  file = here::here("Swiss_Elections_Over_Time",
-                    "03_Output",
+  file = here::here("03_Output",
                     "map_SP.gif")
 )
 
@@ -291,7 +292,13 @@ save_animation(
 
 
 
-# define end time ---------------------------------------------------------
+# end ---------------------------------------------------------------------
 
+# stop parallel cluster
+stopCluster(cl)
+
+# define end time
 end_time <- Sys.time()
 glue("Run time: {as.numeric(round(end_time - start_time, 2))} minutes.")
+
+
