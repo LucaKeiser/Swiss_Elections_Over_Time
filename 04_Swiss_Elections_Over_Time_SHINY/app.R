@@ -31,11 +31,6 @@ ui <- fluidPage(
     
   ),
   
-  hr(),
-  
-  p(strong("Haben Sie schon die Web-App zu den einzelnen Kampagnenbudgets von Politiker*innen/Parteien gesehen?"), br(), "https://lucakeiser.shinyapps.io/Swiss_Elections_2023/"),
-  
-  hr(),
   
   br(),
   br(),
@@ -56,7 +51,7 @@ ui <- fluidPage(
       title = "Grafik",
       imageOutput(outputId = "gif_output"),
       
-      # unfortunately something like rep(glue("{br()}"), 27) 
+      # unfortunately something like rep(glue("{br()}"), 27) does not work...
       br(), br(), br(), br(), br(), br(),
       br(), br(), br(), br(), br(), br(),
       br(), br(), br(), br(), br(), br(),

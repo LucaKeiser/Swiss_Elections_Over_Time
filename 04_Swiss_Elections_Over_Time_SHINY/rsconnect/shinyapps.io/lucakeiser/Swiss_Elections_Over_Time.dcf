@@ -5,7 +5,7 @@ account: lucakeiser
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 10170222
-bundleId: 7794901
+bundleId: 8451306
 url: https://lucakeiser.shinyapps.io/Swiss_Elections_Over_Time/
 version: 1
 asMultiple: FALSE
